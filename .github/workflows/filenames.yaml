@@ -1,0 +1,11 @@
+name: Check filenames
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  filenames:
+    name: Check filenames
+    uses: cartabinaria/config/.github/workflows/filenames.yaml@main

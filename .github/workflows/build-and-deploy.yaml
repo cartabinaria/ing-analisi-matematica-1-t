@@ -1,0 +1,14 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy
+    uses: cartabinaria/config/.github/workflows/statik.yaml@main
+    with:
+      regex_include: "\\.(pdf|link|txt)$"
