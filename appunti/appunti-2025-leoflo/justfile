@@ -1,7 +1,0 @@
-# Cleans the target folder
-clean:
-  rm analisi-t1.pdf
-
-# Builds analisi t1
-build:
-  typst compile analisi-t1.typ analisi-t1.pdf
